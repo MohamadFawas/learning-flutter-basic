@@ -1,0 +1,579 @@
+import "package:flutter/material.dart";
+
+void main(){
+	runApp(
+		MaterialApp(
+		home:App()
+		)
+	);
+}
+
+//Stateless Widgets
+//Statefull Widgets
+
+class App extends StatelessWidget{
+	Widget build(BuildContext context){
+		return Text('Hello, World'); 
+	}
+}
+
+-----------------------------
+Output :-
+
+Hello, World
+
+-------------------------------
+
+import "package:flutter/material.dart";
+
+void main(){
+	runApp(
+		MaterialApp(
+		home:App()
+		)
+	);
+}
+
+//Stateless Widgets
+//Statefull Widgets
+
+class App extends StatelessWidget{
+	Widget build(BuildContext context){
+		return Scaffold(
+			body:Text("Hello World",
+				style: TextStyle(
+					fontSize:40,
+
+				) ),			//TextStyle  //Text
+		); 	//Scaffold
+	}
+}
+
+----------------------------------
+Output :- 
+	Hello World
+
+----------------------------------
+
+
+import "package:flutter/material.dart";
+
+void main(){
+	runApp(
+		MaterialApp(
+		home:App()
+		)
+	);
+}
+
+//Stateless Widgets
+//Statefull Widgets
+
+class App extends StatelessWidget{
+	Widget build(BuildContext context){
+		return Scaffold(
+			appBar: AppBar(
+				backgroundColor: Colors.red,
+				title: Text("Hello"),
+				centerTitle: true,
+		
+		),	//AppBar
+
+			body:Text("Hello World" ),			//TextStyle  //Text
+		); 	//Scaffold
+	}
+}
+
+----------------------------------------------
+output :-
+  		Hello
+Hello World
+
+
+----------------------------------------------
+
+
+
+import "package:flutter/material.dart";
+
+void main(){
+	runApp(
+		MaterialApp(
+		home:App()
+		)
+	);
+}
+
+//Stateless Widgets
+//Statefull Widgets
+
+class App extends StatelessWidget{
+	Widget build(BuildContext context){
+		return Scaffold(
+			appBar: AppBar(
+				backgroundColor: Colors.red,
+				title: Text("Hello"),
+				centerTitle: true,
+				actions: [
+					FlatButton(
+						colour: Colors.white,
+						onPressed: () {},
+						child: Text("Click Me1!"),
+					),//FlatButton
+				
+					FlatButton(
+						colour: Colors.white,
+						onPressed: () {},
+						child: Text("Click Me2!"),
+					)//FlatButton
+			
+				]),	//AppBar
+
+			body:Text("Hello World" ),			//TextStyle  //Text
+		); 	//Scaffold
+	}
+}
+
+
+--------------------------------------------
+Output :-
+ 		Hello      Click Me1!     Click Me2!
+				-------	   -------
+Hello World 
+
+----------------------------------------------
+
+
+
+import "package:flutter/material.dart";
+
+void main(){
+	runApp(
+		MaterialApp(
+		home:App()
+		)
+	);
+}
+
+//Stateless Widgets
+//Statefull Widgets
+
+class App extends StatelessWidget{
+	Widget build(BuildContext context){
+		return Scaffold(
+			appBar: AppBar(
+				backgroundColor: Colors.red,
+				title: Text("Hello"),
+				centerTitle: true,
+				actions: [
+					FlatButton(
+						colour: Colors.white,
+						onPressed: () {},
+						child: Text("Click Me1!"),
+					),//FlatButton
+				
+					FlatButton(
+						colour: Colors.white,
+						onPressed: () {},
+						child: Text("Click Me2!"),
+					)//FlatButton
+			
+				]),	//AppBar
+
+			body: Center(
+				child: Text("Hello World" ),	
+			), //Center
+		); 	//Scaffold
+	}
+}
+
+--------------------------------------------
+Output :-
+ 		Hello      Click Me1!     Click Me2!
+				-------	   -------
+
+
+
+			Hello World 
+
+
+
+
+
+----------------------------------------------
+
+
+
+
+
+
+import "package:flutter/material.dart";
+
+void main(){
+	runApp(
+		MaterialApp(
+		home:App()
+		)
+	);
+}
+
+//Stateless Widgets
+//Statefull Widgets
+
+class App extends StatelessWidget{
+	Widget build(BuildContext context){
+		return Scaffold(
+			appBar: AppBar(
+				backgroundColor: Colors.red,
+				title: Text("Hello"),
+				centerTitle: true,
+				actions: [
+					FlatButton(
+						colour: Colors.white,
+						onPressed: () {},
+						child: Text("Click Me1!"),
+					),//FlatButton
+				
+					FlatButton(
+						colour: Colors.white,
+						onPressed: () {},
+						child: Text("Click Me2!"),
+					)//FlatButton
+			
+				]),	//AppBar
+
+			body:Text("Hello World" ),			//TextStyle  //Text
+		); 	//Scaffold
+	}
+}
+
+
+--------------------------------------------
+Output :-
+ 		Hello      Click Me1!     Click Me2!
+				-------	   -------
+Hello World 
+
+----------------------------------------------
+
+
+
+import "package:flutter/material.dart";
+
+void main(){
+	runApp(
+		MaterialApp(
+		home:App()
+		)
+	);
+}
+
+//Stateless Widgets
+//Statefull Widgets
+
+class App extends StatelessWidget{
+	Widget build(BuildContext context){
+		return Scaffold(
+			appBar: AppBar(
+				backgroundColor: Colors.red,
+				title: Text("Hello"),
+				centerTitle: true,
+				actions: [
+					FlatButton(
+						colour: Colors.white,
+						onPressed: () {},
+						child: Text("Click Me1!"),
+					),//FlatButton
+				
+					FlatButton(
+						colour: Colors.white,
+						onPressed: () {},
+						child: Text("Click Me2!"),
+					)//FlatButton
+			
+				]),	//AppBar
+
+			body: Center(	
+
+				child: Container(
+					height: 70;
+					width:100;
+					color: Colors.red,
+					child: Center(
+						child: Text("Hello World" ),
+                              ),//Center
+				), //Container
+			), //Center
+		); 	//Scaffold
+	}
+}
+
+--------------------------------------------
+Output :-
+ 		Hello      Click Me1!     Click Me2!
+				-------	   -------
+
+
+		---------------------
+			Hello World 
+		---------------------
+
+
+
+
+----------------------------------------------
+
+
+import "package:flutter/material.dart";
+
+void main(){
+	runApp(
+		MaterialApp(
+		home:App()
+		)
+	);
+}
+
+//Stateless Widgets
+//Statefull Widgets
+
+class App extends StatelessWidget{
+	Widget build(BuildContext context){
+		return Scaffold(
+			appBar: AppBar(
+				backgroundColor: Colors.red,
+				title: Text("Hello"),
+				centerTitle: true,
+				actions: [
+					FlatButton(
+						colour: Colors.white,
+						onPressed: () {},
+						child: Text("Click Me1!"),
+					),//FlatButton
+				
+					FlatButton(
+						colour: Colors.white,
+						onPressed: () {},
+						child: Text("Click Me2!"),
+					)//FlatButton
+			
+				]),	//AppBar
+
+			body: Center(	
+
+				child: Container(
+					height: 70;
+					width:100;
+					color: Colors.red,
+					child: Center(
+						child: Text("Hello World" ),
+                              ),//Center
+				), //Container
+			), //Center
+
+			flotingActionButton: FloatingActionButton(
+				backgroundColor: Colors.red,
+				foregroundColor: Colors.black,
+				onPressed: () {},
+				child: Icon(Icons.add), // Icons.favorite
+			
+			), // FloatingActionButton
+		); 	//Scaffold
+	}
+}
+
+--------------------------------------------
+Output :-
+ 		Hello      Click Me1!     Click Me2!
+				-------	   -------
+
+
+		---------------------
+			Hello World 
+		---------------------
+
+						    	
+						  *   *	
+						*   \/   *
+						  *   *
+----------------------------------------------
+
+
+
+
+import "package:flutter/material.dart";
+
+void main(){
+	runApp(
+		MaterialApp(
+		home:App()
+		)
+	);
+}
+
+//Stateless Widgets
+//Statefull Widgets
+
+class App extends StatelessWidget{
+	Widget build(BuildContext context){
+		return Scaffold(
+			appBar: AppBar(
+				backgroundColor: Colors.red,
+				title: Text("Hello"),
+				centerTitle: true,
+				actions: [
+					FlatButton(
+						colour: Colors.white,
+						onPressed: () {},
+						child: Text("Click Me1!"),
+					),//FlatButton
+				
+					FlatButton(
+						colour: Colors.white,
+						onPressed: () {},
+						child: Text("Click Me2!"),
+					)//FlatButton
+			
+				]),	//AppBar
+
+			body: Center(	
+
+				//child: Image.network(" photo path "),
+				child: Image.asset("assets/image.jpg"),
+			), //Center
+
+			flotingActionButton: FloatingActionButton(
+				backgroundColor: Colors.red,
+				foregroundColor: Colors.black,
+				onPressed: () {},
+				child: Icon(Icons.add), // Icons.favorite
+			
+			), // FloatingActionButton
+		); 	//Scaffold
+	}
+}
+
+*****************************************************
+
+pubspac.yaml
+
+	assets:
+		-assets/image.jpg
+
+
+
+
+--------------------------------------------
+Output :-
+ 		Hello      Click Me1!     Click Me2!
+				-------	   -------
+
+
+		---------------------
+			Picture place
+		---------------------
+
+						    	
+						  *   *	
+						*   \/   *
+						  *   *
+----------------------------------------------
+
+
+import "package:flutter/material.dart";
+
+void main(){
+	runApp(
+		MaterialApp(
+		home:App()
+		)
+	);
+}
+
+//Stateless Widgets
+//Statefull Widgets
+
+class App extends StatelessWidget{
+	Widget build(BuildContext context){
+		return Scaffold(
+			appBar: AppBar(
+				backgroundColor: Colors.red,
+				title: Text("Hello"),
+				centerTitle: true,
+				actions: [
+					FlatButton(
+						colour: Colors.white,
+						onPressed: () {},
+						child: Text("Click Me1!"),
+					),//FlatButton
+				
+					FlatButton(
+						colour: Colors.white,
+						onPressed: () {},
+						child: Text("Click Me2!"),
+					)//FlatButton
+			
+				]),	//AppBar
+
+			body:Container(
+			  color: Colors.red,
+			  height: 300,
+			   
+			 child: Row(
+			   mainAxisAligment: MainAxisAligment.spaceAround,  // .start  .end   .spaceBetween  .spaceAround   .spaceEvenly 
+			     CrossAxisAligment: CrossAxisAligment.end,	//  .start .stretch   .center .end  .baseline
+
+				
+
+				children: [
+					Container(
+						hight: 75,
+						width: 75,
+						color: Colors.red,
+					), //Container
+					Container(
+						hight: 75,
+						width: 75,
+						color: Colors.yellow,
+					), //Container
+					Container(
+						hight: 75,
+						width: 75,
+						color: Colors.green,
+					), //Container
+					Container(
+						hight: 75,
+						width: 75,
+						color: Colors.blue,
+					), //Container
+					Container(
+						hight: 50,
+						width: 50,
+						color: Colors.purple,
+					), //Container
+					
+			     ]),//Row
+			), Container
+		); 	//Scaffold
+	}
+}
+
+
+
+
+--------------------------------------------
+Output :-
+ 		Hello      Click Me1!     Click Me2!
+				-------	   -------
+
+
+		------------------------
+		|	|     |     |    |
+		------------------------
+----------------------------------------------
+
+
+
+
+
+
